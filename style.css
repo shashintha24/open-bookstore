@@ -44,15 +44,11 @@ nav a {
 
 /* Footer */
 footer {
-   
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #0077cc;
-    color: white;
+    background-color: #222;
+    color: #ccc;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
 /* Sections */
