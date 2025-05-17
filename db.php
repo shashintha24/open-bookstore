@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
 $user = 'root';
-$pass = '';
+$pass = ''; // default password is blank in XAMPP
 $dbname = 'readnshop';
 
 $conn = new mysqli($host, $user, $pass, $dbname);

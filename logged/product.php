@@ -1,4 +1,4 @@
-<?php include 'partials/header.php'; ?>
+<?php include '../partials/headerdash.php'; ?>
 <link rel="stylesheet" href="style.css">
 
 <div class="container">
@@ -14,4 +14,4 @@
         <a href="#" class="button">Buy Now</a>
     </div>
 </div>
-<?php include 'partials/footer.php'; ?>
+<?php include '../partials/footer.php'; ?>

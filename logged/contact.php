@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include 'partials/header.php'; ?>
+<?php include '../partials/headerdash.php'; ?>
 <link rel="stylesheet" href="style.css">
 <div class="container">
     <h2>Contact Us</h2>
@@ -20,4 +20,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <button type="submit">Send</button>
     </form>
 </div>
-<?php include 'partials/footer.php'; ?>
+<?php include '../partials/footer.php'; ?>

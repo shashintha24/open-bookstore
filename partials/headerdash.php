@@ -6,7 +6,6 @@
         <a href="index.php">Home</a>
         <a href="product.php">Products</a>
         <a href="contact.php">Contact</a>
-        <a href="login.php">Login</a>
-        <a href="register.php">Register</a>
+        <a href="logout.php">Logout</a>
     </nav>
 </header>

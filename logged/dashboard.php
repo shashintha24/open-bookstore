@@ -5,6 +5,8 @@ if (!isset($_SESSION['user'])) {
     exit();
 }
 ?>
-
+<?php include '../partials/headerdash.php'; ?>
+<link rel="stylesheet" href="style.css">
 <h2>Welcome, <?php echo $_SESSION['user']; ?>!</h2>
-<p><a href="logout.php">Logout</a></p>
+
+<?php include '../partials/footer.php'; ?>

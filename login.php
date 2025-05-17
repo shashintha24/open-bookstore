@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($user = $result->fetch_assoc()) {
         if (password_verify($password, $user['password'])) {
             $_SESSION['user'] = $user['username'];
-            header("Location: dashboard.php");
+            header("Location: logged/dashboard.php");
         } else {
             echo "Invalid password.";
         }
@@ -23,10 +23,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+<link rel="stylesheet" href="login.css">
+<header>
+    <h1>Open book store</h1>
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="product.php">Products</a>
+        <a href="contact.php">Contact</a>
+    </nav>
+</header>
 
-<h2>Login</h2>
+
+<div>
 <form method="post">
     <input type="text" name="username" placeholder="Username" required><br><br>
     <input type="password" name="password" placeholder="Password" required><br><br>
     <button type="submit">Login</button>
 </form>
+</div>
