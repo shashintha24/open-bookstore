@@ -16,10 +16,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user'] = $user['username'];
             header("Location: logged/dashboard.php");
         } else {
-            echo "Invalid password.";
+            $var = "Invalid password.";
+            $colour = "red";
+            //echo "Invalid password.";
         }
     } else {
-        echo "User not found.";
+        $var ="Invalid password.";
+        $colour = "red";
+        //echo "User not found.";
     }
 }
 ?>
@@ -36,8 +40,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div>
 <form method="post">
+    <?php
+    if (isset($var)) {
+    echo "<p style='color: $colour;'>$var</p>"; 
+}?>
     <input type="text" name="username" placeholder="Username" required><br><br>
     <input type="password" name="password" placeholder="Password" required><br><br>
     <button type="submit">Login</button>
+    <a href="register.php">Register</a>
 </form>
 </div>
